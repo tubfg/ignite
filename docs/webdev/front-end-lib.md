@@ -38,3 +38,6 @@ There are also controls for columns and gutters which can help you implement the
 
 ## SASS
 A language that extends CSS by providing features such as mixins (which are sort of like functions that can be included in multiple style declarations), conditions with if-else, for and while loops, multiple files, and a lot more! You can write less and more maintainable CSS this way!
+
+There are two types of SASS files: ".scss" which is the new one and a superset of CSS whereas ".sass" is the old version
+which should not be preferred.

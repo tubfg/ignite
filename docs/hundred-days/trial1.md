@@ -1,197 +1,133 @@
-## Round 1 🌑
-Goal : Build a habit. Learn web dev, Rust and decentralized web along the way.
+# Trial 1 🌑
+Goal : Build a habit.
 
-### Day 65
-Continued project work. The basic version should be ready soon.
-
-### Day 64
-Continued working on the project. It makes more sense now. I understand the concept of layouts better now.
-
-### Day 63
-Got back to working on the project. Learning definitely helped.
-
-### Day 62
-Continued learning about static sites. I think one more day should do it.
-
-### Day 61
-Spent a good part of the day learning about static sites. I will have to do it tomorrow too, I think.
-
-### Day 60
-Continued working on my project. A lot of administrative work had to be done.
-
-### Day 59
-Continued working on my project. It's starting to make sense, not fully though.
-
-### Day 58
-Made progress on the project.
-
-### Day 57
-Made a basic page with the navbar load with Hugo. I searched up many web dev concepts while trying to make this work. Hugo is convenient. I just need to figure out how to make it work well.
-
-### Day 56
-Added the footer for sites and set up the bare minimum for adding Hugo to my project. I wasn't working very efficiently.
-
-### Day 55
-I completed the CSS Grid course, learnt a lot and finished the grid garden game. My notes are better now and I'm aware of how powerful it is. Can't wait to design better and use all these new concepts in my project.
-
-### Day 54
-I did the flexbox course (which was interactive), the frogs game, and checked out some key concepts on MDN (flex growth). I understand it better and the docs are better now too. Onto CSS Grid next and I can build the website better!
-
-### Day 53
-The about page too is mostly ready. The next two sections will require more work. I need to setup Hugo and a build pipeline. I should do the Flexbox and Grid courses soon.
-
-### Day 52
-I built a responsive home screen (the typography, background picture and the general footer is still left). I'm using CSS properties a bit better now but there's still a lot to learn.
-
-### Day 51
-I designed and implemented a responsive nav bar that looks okay. It's frustrating sometimes. I want to understand web development more deeply. I should try out [Scrimba](https://scrimba.com/dashboard?tab=enrolled) and make more complete notes (that's been a little frustrating).
-
-### Day 50
-After a break, I'm back! Although the challenge says only 1 day breaks are allowed, I haven't taken one in a while so a 2 day break should be alright. Designed a navbar and made it somewhat responsive. It doesn't look "professional". Maybe I should build a good one with Bootstrap. The aim of this project is to build a good website (learning can come secondary).
-
-### Day 49
-Skimmed SASS. It looks quite useful. I heard that I should focus more on using modern CSS than Bootstrap and Tailwind CSS for now so that I won't be dependent on them and I can work with multiple frameworks which will come up in the future. Started design for my first major project.
-
-### Day 48
-Finished the jQuery section today. It's useful but there didn't seem to be too much about it in FCC and I don't see any reason to explore it further right now. Bootstrap is also done for now. I'll finish SASS and then start making things!
-
-### Day 47
-Finished the Bootstrap section today. I understood it at a high level but there's so much more to it. Bootstrap isn't done yet. I should explore it in more detail from the website tomorrow.
-
-### Day 46
-Same thing as yesterday. I learnt more about Bootstrap's concepts. The framework is huge and has options for almost anything you'd want to do. I think I should try to extensively use it in a project to be comfortable with it.
-
-### Day 45
-The website did not seem to work today. That was a good excuse to learn a bit more about Bootstrap and collect a few articles to better understand and use CSS.
-
-### Day 44
-Done with that project. I got the JavaScript Data Structures and Algorithms certificate. The new one, Front End Development Libraries seems packed with information. I should go through it slowly but carefully.
-
-### Day 43
-This last project is not very good. The requirements and the phrasing of the question isn't very good. Maybe that's intentional. I couldn't finish it and I haven't worked on anything else.
-
-### Day 42
-I did 4(out of 5) projects in the JavaScript Data Structures and Algorithms certification. These are good but I don't think all of them accurately simulate real life problems. It's alright. I can't wait to start Front End Development.
-
-### Day 41
-I completed Intermediate Algorithm Scripting. This was a good use of many concepts I learnt, like regex, FP and string processing. This helped in learning a few more features of the language and when to use what. That's really the best way to learn, to need it. What's coming next in Front End dev should be fun!
-
-### Day 40
-I should have done this earlier. I finished Functional Programming in JS and better understood how the `this` concept works. This kind of concept-building looks like it is useful. Time to apply all these concepts to write code that suits the language.
-
-### Day 39
-So much JS. I learnt a few commonly used functions and learnt a bit about Functional Programming and how it has the potential to make your code neater. I like this and think I should start using these wherever possible.
-
-### Day 38
-This was a good session. I better understood how prototypes work but there's so much more to JavaScript and I don't fully understand how it works. I could finish the Object Oriented Programming section today. Can't wait to start using all these concepts to make something!
-
-### Day 37
-I tried learning about prototypes and how they are used in JS. Its a complex topic and I couldn't totally understand it.
-
-### Day 1
+## Day 1
 Set up everything for continuous work. Started with HTML5 from FCC. Completed 39% and learnt about image, main and, anchor tags. I really like the interface and wanted to keep going on with it.
-
-### Day 2
+## Day 2
 Forms and input elements in HTML5. Understood how those darn radio buttons work. FCC's style of work from anywhere without passwords is really nice! Studied with a time bound which was nice but not enough. Should aim to finish everything else by early evening.
-
-### Day 3
+## Day 3
 Finished up the basics of HTML and started with basics of CSS. I'm see that there's a new way to look at them. CSS classes are element-agnostic e.g. a class for "thin-green-shadow" will do that to any element which is part of that class. Also learnt about the parts of a HTML doc and CSS fonts (pretty cool). Spent a little more time than usual but I can still do better. Need to finish everything else before I start studying.
-
-### Day 4
+## Day 4
 Moar CSS. A heck lot more. Learnt about margins, paddings, etc. Learnt about relative sizes, colors and overriding rules. This session made CSS a bit more intuitive to me. It's also cool to see what can be built with it. I started much earlier and it made the whole thing much more peaceful. I think it might soon be time to start learning the other things I had planned for the 100DaysOfCode.
-
-### Day 5
+## Day 5
 Finished the basics of CSS. Learnt about how CSS variables work, fallbacks for them and got to know about media queries. I worked on it for a good amount of time. My primary goal wrt this, for now, is consistency so as long as I'm learning from this and making progress, that's all good.
-
-### Day 6
+## Day 6
 Started with Applied Visual Design. A lot of this was covered before but I got to learn that some HTML just apply a CSS property to the content within them. The "text-transform" property was really cool. It modifies the actual content without modifying the HTML! Computer broke down for a bit so my flow was interrupted a bit but at least I created the Rust doc and I'm all ready to work on that.
-
-### Day 7
+## Day 7
 Continuing Applied Visual Design. I better understood how CSS positioning works and it felt so intuitive after doing the exercises. I also learnt about using the "float" property in CSS, a little bit about the color model and even how HSL works! That was a productive session of learning and the section seems very interesting!
-
-### Day 8
+## Day 8
 CSS is really powerful and you can do a lot with it. It has the ability to apply gradient shading, linear, repeated etc. It has the transform attribute to alter elements' shapes and then there are the animation attributes with which you can do things like make juggling animations and so **many** other graphics that it's almost surprising. That's the end of the Applied Visual Design section. I just had my mind blown away by the abilities of CSS but it's also given me confidence that these things are actually intuitive and I can do it too!
-
-### Day 9
+## Day 9
 I started with the Applied Accessibility section. I learnt about these new HTML5 tags that help you in structuring a document and which help screen-readers find parts of the document they want. There are better alternatives to good ol' div nowadays. I did not know that screen-readers were so fast! I also learnt a bit about better color-scheming for the best readability. Honestly, it's better for everyone.
-
-### Day 10
+## Day 10
 Started and finished the Responsive Web Design Principles section.I could not study enough of web design today but I did learn something interesting about retina displays, viewports and responsive elements. I can't wait to start with CSS flexboxes and then actually making a few projects for the course! I've got other project ideas in mind too, which I should probably write down and design.
-
-### Day 11
+## Day 11
 Started the CSS flexbox section. The way the elements move and align themselves is cool! The twitter card example they had was good and helped explain how flex containers and the boxes within them interact. I should probably do this earlier so that I can spend more time learning and maybe even start the other topics of round 1 soon.
-
-### Day 12
+## Day 12
 Finished the CSS flexbox section and started with the CSS grid section. It's seems very natural to visualise a viewport as a collection of flex containers / grids with cells. It was a good session and it was fun playing around with those boxes.
-
-### Day 13
+## Day 13
 I changed up the timings a little bit so I could study and code a bit more than usual. I finished the CSS Grid section and all the tutorials from Responsive Web Design. Now I get to use all of that while making projects. I made a little bit of progress on the first one and it was fun playing around with CSS while I know what is happening. I want to make this a good project and this was a start to it. Now to keep going!
-
-### Day 14
+## Day 14
 The new timings are working out well. I completed the first project, made sure it was responsive and submitted it. It was slightly annoying to get the orientation fixed but the solution was logical and it was fun to implement! I started the second project too and set up the bare-bones HTML version. Can't wait to style it! I think I will need to use media queries for this one.
-
-### Day 15
+## Day 15
 Ouch. I was way too distracted to finish the next project. I feel like I should be using more concepts I learnt in the course. The elements were behaving weird. The test cases weren't passing as expected either. I don't know why I fell into this period of horrible inefficiency. I should get out of it soon!
-
-### Day 16
+## Day 16
 Oh dear, I messed up. I finished the survey form project but I delayed it a little too much. There were a few silly HTML mistakes, I should've been a little more careful while writing the HTML but I finished it! Maybe for the next one I should spend a bit more time on the wireframe, read the notes I've made and design a better page.
-
-### Day 17
+## Day 17
 This was a better session. Having a clear idea on what to build was helpful. I could easily set up the base HTML and I now know what to look forward to when adding the styles in CSS. It's a little bit annoying to get the elements where I want but it's alright. I'm learning from my notes and gotchas that I didn't even know that I didn't know.
-
-### Day 18
+## Day 18
 It's so much better to work with a clear foundation! I was able to make more progress on the product page project while also learning some CSS concepts and tricks for grids and flex boxes. There are still many things for me to learn and I don't know where is the best place to use each thing but it gets better while designing and implementing projects like these!
-
-### Day 19
+## Day 19
 OMG the iframe is one frustrating element. I learnt a bit about padding, media queries, how things don't exactly work the same on a hosted page / local page (for whatever reason). The main part is that I finished the product page! Trying to make it responsive was fun but also scary, seeing how device dimensions vary a lot.
-
-### Day 20
+## Day 20
 That was a diffused, dragged-out session. I didn't code too much. Just made the site diagrams and marked the requirements. I think I have enough content though. The next dev session should be much better.
-
-### Day 21
+## Day 21
 The base of the site is ready! I put in the HTML and placed the content. Now I can start designing with CSS! Must try using the root variables and setting a dark mode for the site. Maybe once the styling is done I could try comparing visual dimensions with rems. Maybe I should also have a plan on how to go about styling various elements.
-
-### Day 22
+## Day 22
 My initial ideas didn't work but turns out using simpler techniques is often enough. I'm learning a few new things about CSS and that's pretty cool. I designed the basic layout of the page with CSS and now to actually make it look good and add the responsiveness. Hope I can increase the momentum.
-
-### Day 23
+## Day 23
 Wow. That was fun. I completed the technical docs project. Used a dark theme, styled the scroll bar, properly styled elements which were children of other elements. Created a media query to change navigation styles but it's still broken when the screen size changes. I learnt CSS concepts such as `inline` vs `block` and the `inline-block`, used responsive sizes but it still felt like building on not-very-strong foundations. I definitely need more practice with CSS!
-
-### Day 24
+## Day 24
 I started with the new project. A portfolio. Yay! I designed the wire-frame and decided what content would go on the pages. Set up a very bare HTML backbone. I did learn a bit about full width divs. Can't wait to add content and then design it!
-
-### Day 25
+## Day 25
 Practising at a particular time of the day does have its benefits. My state of mind is different during the day. The HTML for the page is ready and its filled with content. Next I shall style it to the design with CSS. Then finally set the color-scheme. Looks like I'll have to use quite a few CSS concepts. Which is good!
-
-### Day 26
+## Day 26
 I couldn't accomplish a lot today. I did improve the timeline page on the website but I moved on to other things for most of the day. Hopefully I can get back to the proper schedule tomorrow.
-
-### Day 27
+## Day 27
 I completed the portfolio project and claimed the responsive web development certificate! I loved it! Some of the requirements for the project were different from what I expected but I think I made the web-page responsive and had a good colorscheme to it. I could still do better on the responsiveness and the general design and feel of the page. It could have been more uniform and straightforward. Maybe I should read some CSS design principles and see how I can improve. I did learn a few neat tricks too!
-
-### Day 28
+## Day 28
 Back to the normal schedule! Well, not totally but much closer than the previous days. I started the JavaScript Algorithms and Data Structures Certification on freeCodeCamp. I think it will help me get comfortable with the language which will be useful for further development. There are some topics which I think are important and required for web development which aren't in the certification. I found additional resources for them. I'm lacking project ideas for those topics. Need to come up with something!
-
-### Day 29
+## Day 29
 I learnt a lot about JS scoping, variables, and some array methods. I hope I will remember all this. Regarding the extra topics, I think I should do them only once I really start using JS for something I need. Till then I will follow the certification path. I should also think about how to include Rust in my sessions.
-
-### Day 30
+## Day 30
 That was an irregular session. I learnt control flow, type conversions (which I still need to explore more), and objects. I now know more about these topics than I ever knew before! The upcoming topics promise even more fun!
-
-### Day 31
+## Day 31
 I completed the Basic JavaScript topic, which included loops and math functions. I started the ES6 topic which is interesting, the modern features of the language are so cool. I can definitely write cleaner code with them. I should maintain this pace and maybe actually start JS projects (but what exactly? It should be useful).
-
-### Day 32
+## Day 32
 I learnt a lot in that session. It feels like I haven't truly understood the use of some of these concepts I'm learning. I should read and write more JS code for that. Some concepts like `export default` just don't make sense at all. It looks like there has been some debate about it while the feature was being added to the specification.
-
-### Day 33
+## Day 33
 I cleared my doubts about default export, learnt about promises (I suspect there's a lot more in that topic) and tried to finish regex so I could get to the new topics in debugging. This was a smooth session but I'm still missing the projects!
-
-### Day 34
+## Day 34
 Finally done with regex. It is a confusing topic but I did not clarify it. The section on console, errors and debugging seems useful. Can't wait to fully explore it and learn how to do things the right way.
-
-### Day 35
+## Day 35
 Debugging was different from what I expected. There wasn't enough about the console. The data structures section was useful and I could complete it since Arrays and Objects look like they would be used everywhere. This was a good session, wrt time as well.
-
-### Day 36
+## Day 36
 This was an interesting session. There were a few questions which required problem solving and figuring out how to use many JS methods that I learnt. These are useful since I get to learn about the features of the language. Then I started with OOP which is a good dive into JS covering a lot. I think I should take it a bit slow and make sure I understand everything.
+## Day 37
+I tried learning about prototypes and how they are used in JS. Its a complex topic and I couldn't totally understand it.
+## Day 38
+This was a good session. I better understood how prototypes work but there's so much more to JavaScript and I don't fully understand how it works. I could finish the Object Oriented Programming section today. Can't wait to start using all these concepts to make something!
+## Day 39
+So much JS. I learnt a few commonly used functions and learnt a bit about Functional Programming and how it has the potential to make your code neater. I like this and think I should start using these wherever possible.
+## Day 40
+I should have done this earlier. I finished Functional Programming in JS and better understood how the `this` concept works. This kind of concept-building looks like it is useful. Time to apply all these concepts to write code that suits the language.
+## Day 41
+I completed Intermediate Algorithm Scripting. This was a good use of many concepts I learnt, like regex, FP and string processing. This helped in learning a few more features of the language and when to use what. That's really the best way to learn, to need it. What's coming next in Front End dev should be fun!
+## Day 42
+I did 4(out of 5) projects in the JavaScript Data Structures and Algorithms certification. These are good but I don't think all of them accurately simulate real life problems. It's alright. I can't wait to start Front End Development.
+## Day 43
+This last project is not very good. The requirements and the phrasing of the question isn't very good. Maybe that's intentional. I couldn't finish it and I haven't worked on anything else.
+## Day 44
+Done with that project. I got the JavaScript Data Structures and Algorithms certificate. The new one, Front End Development Libraries seems packed with information. I should go through it slowly but carefully.
+## Day 45
+The website did not seem to work today. That was a good excuse to learn a bit more about Bootstrap and collect a few articles to better understand and use CSS.
+## Day 46
+Same thing as yesterday. I learnt more about Bootstrap's concepts. The framework is huge and has options for almost anything you'd want to do. I think I should try to extensively use it in a project to be comfortable with it.
+## Day 47
+Finished the Bootstrap section today. I understood it at a high level but there's so much more to it. Bootstrap isn't done yet. I should explore it in more detail from the website tomorrow.
+## Day 48
+Finished the jQuery section today. It's useful but there didn't seem to be too much about it in FCC and I don't see any reason to explore it further right now. Bootstrap is also done for now. I'll finish SASS and then start making things!
+## Day 49
+Skimmed SASS. It looks quite useful. I heard that I should focus more on using modern CSS than Bootstrap and Tailwind CSS for now so that I won't be dependent on them and I can work with multiple frameworks which will come up in the future. Started design for my first major project.
+## Day 50
+After a break, I'm back! Although the challenge says only 1 day breaks are allowed, I haven't taken one in a while so a 2 day break should be alright. Designed a navbar and made it somewhat responsive. It doesn't look "professional". Maybe I should build a good one with Bootstrap. The aim of this project is to build a good website (learning can come secondary).
+## Day 51
+I designed and implemented a responsive nav bar that looks okay. It's frustrating sometimes. I want to understand web development more deeply. I should try out [Scrimba](https://scrimba.com/dashboard?tab=enrolled) and make more complete notes (that's been a little frustrating).
+## Day 52
+I built a responsive home screen (the typography, background picture and the general footer is still left). I'm using CSS properties a bit better now but there's still a lot to learn.
+## Day 53
+The about page too is mostly ready. The next two sections will require more work. I need to setup Hugo and a build pipeline. I should do the Flexbox and Grid courses soon.
+## Day 54
+I did the flexbox course (which was interactive), the frogs game, and checked out some key concepts on MDN (flex growth). I understand it better and the docs are better now too. Onto CSS Grid next and I can build the website better!
+## Day 55
+I completed the CSS Grid course, learnt a lot and finished the grid garden game. My notes are better now and I'm aware of how powerful it is. Can't wait to design better and use all these new concepts in my project.
+## Day 56
+Added the footer for sites and set up the bare minimum for adding Hugo to my project. I wasn't working very efficiently.
+## Day 57
+Made a basic page with the navbar load with Hugo. I searched up many web dev concepts while trying to make this work. Hugo is convenient. I just need to figure out how to make it work well.
+## Day 58
+Made progress on the project.
+## Day 59
+Continued working on my project. It's starting to make sense, not fully though.
+## Day 60
+Continued working on my project. A lot of administrative work had to be done.
+## Day 61
+Spent a good part of the day learning about static sites. I will have to do it tomorrow too, I think.
+## Day 62
+Continued learning about static sites. I think one more day should do it.
+## Day 63
+Got back to working on the project. Learning definitely helped.
+## Day 64
+Continued working on the project. It makes more sense now. I understand the concept of layouts better now.
+## Day 65
+Continued project work. The basic version should be ready soon.
