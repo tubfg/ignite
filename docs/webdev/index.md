@@ -5,10 +5,16 @@ It will help me be a better developer ("full-stack" perhaps?).
 I can contribute more, freelance more and in general, have more opportunities to build things!
 
 ## Learn
-* [Freecodecamp](https://www.freecodecamp.org/) certifications. They're practical 😄 and useful from what I hear (it's true!).
-Certifications : Responsive web design -> Front end dev with libraries
--> JavaScript algorithms & DS -> Back end dev & APIs. All of them maybe, they're that good!
+Do [Freecodecamp](https://www.freecodecamp.org/) certifications. 
+They're practical 😄 and useful from what I hear (it's true!).
+Maybe I should do all of them ...
 
+## Topics
+* [Responsive Web Design](./resp-web-design)
+* [JavaScript Data Structures and Algorithms](./js-dsa)
+* [Front End Libraries](./front-end-lib)
+
+## Extra learn
 * [Asynchronous programming in JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts) 
 used by all modern applications.
 * [Client side web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs) 
