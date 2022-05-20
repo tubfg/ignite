@@ -46,7 +46,6 @@ Notes guideline : Something fundamental and important or new (preferrably with l
 
 ## Regular Expressions
 * You can specify a required number of matches, more specific than `*` or `+`. The format is `(some matching pattern){min, max}`. You can omit min or max if you don't want a lowerbound or upperbound, respectively. To specify a particular number of matches, use `(pattern){exactNum}`.
-
 ## Debugging
 console.clear() is useful
 
@@ -146,3 +145,5 @@ Sorting also modifies the original array.
 You can also set what `this` will be used inside a function. One way to change `this` is using `funk.call(newThis)` which will call that function with a new `this` for that invocation only.  
 Like `.call(newThis)`, there's also `.bind(newThis)` which returns a function which calls the original function but while setting its `this` to `newThis`. E.g. `funk.bind(newThis)()`.  
 `.bind(newThis, ...args)` can also be used to create partial functions. You can set some parameters of the function and those won't be required in the new function that `bind` returns.
+
+## Random questions

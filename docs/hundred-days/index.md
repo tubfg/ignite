@@ -13,3 +13,8 @@ Notes:
 * [Responsive web design](./webdev/resp-web-design).
 * [JavaScript algorithms and data structures](./webdev/js-dsa).
 * [Front End Development with Libraries](./webdev/front-end-lib).
+
+The initial goals I set will take a long time to accomplish. 
+I also want to do this challenge https://www.dailyui.co/ to become a better web developer and designer.
+
+Where can you design stuff? [Penpot, which has a YouTube channel too :)](https://www.youtube.com/channel/UCAqS8G72uv9P5HG1IfgnQ9g)
