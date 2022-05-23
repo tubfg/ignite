@@ -28,6 +28,11 @@ explains how the browser engine processes your scripts.
 While these are good, I need to use them to really learn them. Must figure out apps I can build with JavaScript.
 * [An npm crash course](https://www.youtube.com/watch?v=jHDhaSSKmB0) since it is used everywhere.
 * [UI design for coders](https://www.youtube.com/watch?v=0JCUH5daCCE). The apps we make also need to look good ...
+* [A challenge to make responsive layouts](https://courses.kevinpowell.co/conquering-responsive-layouts).
+* [Probably the last CSS grid course](https://cssgrid.io/) since they're used everywhere.
+* [Choosing colors for your app](https://www.youtube.com/watch?v=mq8LYj6kRyE)
+* Apparently, typography is a big deal (I agree, it's also somewhat difficult). [A course to help](https://www.youtube.com/watch?v=agbh1wbfJt8)
+* [Before development there is design](https://www.youtube.com/watch?v=QBfblbmTTF4&list=PL4-IK0AVhVjOfcnTIEzfb4o44ioGYZOG5)
 
 Where would you use CSS Grid and where would you use a Flexbox? These might help:
 * [A full detailed explanation](https://ishadeed.com/article/grid-layout-flexbox-components/).
