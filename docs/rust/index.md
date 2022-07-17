@@ -15,3 +15,4 @@ from that Medium article ([this one](https://towardsdatascience.com/you-want-to-
 A browser [engine](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html). 
 A web [application](https://joelmccracken.github.io/entries/a-simple-web-app-in-rust-pt-1/). 
 An encrypted and compressed filesystem. Then open source 😋.
+* There's effective C++ and then there's [effective rust](https://www.lurklurk.org/effective-rust/intro.html).
