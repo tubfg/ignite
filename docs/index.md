@@ -1,5 +1,3 @@
-# Ignite
-
 ## What's this
 I want to build clean (simple but poweful software) and good looking things on a computer.
 Things that can help people accomplish their goals.

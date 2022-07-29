@@ -35,4 +35,5 @@ Where would you use CSS Grid and where would you use a Flexbox? These might help
 * [A full detailed explanation](https://ishadeed.com/article/grid-layout-flexbox-components/).
 * [Major points of difference](https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/).
 
-Complete all of boxes for the [web dev skills mentioned here](https://andreasbm.github.io/web-skills/?compact).
+Is something missing?
+* Complete all of boxes for the [web dev skills mentioned here](https://andreasbm.github.io/web-skills/?compact).

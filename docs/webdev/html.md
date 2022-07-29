@@ -1,6 +1,6 @@
-# Responsive Web Design
+# HTML
 Notes made while studying this
-[freeCodeCamp certification](https://www.freecodecamp.org/learn/responsive-web-design/) and more.
+[freeCodeCamp certification for responsive web design](https://www.freecodecamp.org/learn/responsive-web-design/) and more.
 
 ## Basic HTML and HTML5
 * It's a convention to write all HTML tags in lowercase.
