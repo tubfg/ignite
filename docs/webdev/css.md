@@ -1,28 +1,6 @@
-# Responsive Web Design
-Notes made while studying this [freeCodeCamp certification](https://www.freecodecamp.org/learn/responsive-web-design/).
+# Cascading Style Sheets
 
-Deciding if you should write something here: Is this something new that isn't in your memory or is it a important concept? Go ahead!
-
-## Basic HTML and HTML5
-We're building a HTML5 cat photo web app.
-* It's a convention to write all HTML tags in lowercase.
-* Fancy new HTML5 tags : `main` inside which you can put other elements. These are supposed to be the "main" elements from an SEO standpoint.
-* All `img` tags must have the alt attribute. The `img` tag is a type of self-closing tag.
-* Internal linking with `a`: set the `href` to `#<id-of-element>`. Add `target="_blank"` as an attribute so the link opens in a new tab.
-* `input` tags can have placeholder text and `form` tags have an attribute "action" which is the end point where the form data is submitted. You can make it **required** by adding the `required` attribute.
-* A button of type `submit` enclosed in a form tag will submit the data from all `input` tags to the action URL.
-* Radio buttons are a type of `input` element. You can group them into a radio group by giving them all the same `name` attribute. A radio button can have associated data, e.g. text, with the `label` tag. You can either nest the `input` element inside the `label` element or you can keep them separate but link them by setting the `for` attribute of `label` to the `id` of the `input` element.
-* Same thing with checkboxes but a user can select multiple of those at the same time.
-* With both those tags, the data that is sent to the server is the `value` attribute of the `input` element(s) selected. The value is usually the same as the data in the corresponding `label` element. A complete input radio button might look like:
-
-  ```html
-  <label for="indoor">
-    <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
-  </label>
-  ```
-* `div` is a general purpose container element.
-
-## Basic CSS
+## Notes from course
 * Web fonts can be downloaded onto the user's browser if your website requires them. This is done by defining the font in CSS, e.g. in the `<style>` tag. The rule is specified as : 
   ```css
   @font-face {
@@ -49,8 +27,6 @@ We're building a HTML5 cat photo web app.
   ```
   The `media-type and` part is optional. You can also redeclare styles which will then override the previous styles.
 
-## Applied Visual Design
-* The `<strong></strong>` tag applies `font-weight: bold;` to the element it is enclosing. The `<u></u>` tag applies `text-decoration: underline;` to the element it is enclosing. The `<em></em>` tag applies `font-style: italic;`. The `<s></s>` tag applies `text-decoration: line-through;` i.e. strikethrough.
 * The `box-shadow` property in CSS can apply multiple shadows to elements. It can control, offsets, blur, spread and color of the shadows.
 * The `text-transform` can change the capitalization of elements without modifying the HTML. It can be set to `lowercase`, `capitalize`, etc.
 * Pseudo classes in CSS are extra keywords that you can add to selectors to modify specific states of the element. `a:hover` will modify the style of the `a` element during the state when the mouse is hovering over it.
@@ -79,22 +55,6 @@ We're building a HTML5 cat photo web app.
     }
     ```
 * If no 100% is specified, it will be the same as 0%. You can keep an element at the 100% state after the animation finishes by setting this property: `animation-fill-mode: forwards;`. Set `animation-iteration-count: 3;` to infinite to keep it running forever.
-
-## Applied Accessibility
-* The heading tags should be used to show the hierarchical relationship between elements. There should be only one `<h1>` element in a page. There should also be only one `<main></main>` element in a page (often coupled with a "jump to main" link to it).
-* `<div>` - groups content `<section>` - groups related content `<article>` - groups independent, self-contained content.
-* The `<header>` tag is for introductory content / content that appears on multiple pages. For the navbar / navigation links you can use the `<nav>` tag. A counterpart to the `<header>` tag is the `<footer>` tag.
-* The `<audio>` tag gives semantic meaning to audio (and can provide controls) when wrapped around a `source` tag with audio.
-* Similarly the `<figure>` tag gives semantic meaning to `<img>` elements in it when combined along with `<figcaption>`.
-* You can wrap radio buttons along with their labels with the `<fieldset>` tag to show that they are related. `<legend>` can provide a description for that fieldset.
-* Wrap anchor tags around a whole description of the link, not just "click here" as that is what is read by screen readers.
-* The "accesskey" attribute can be set to an element telling what key the user must press to bring that element into focus.
-* Setting the "tabindex" attribute to an element means it must be focused upon when tabbing through the page.
-
-## Responsive Web Design Principles
-* The "viewport" is the part of the user's screen where the website is rendered. You can use media queries to access its attributes and apply CSS styles accordingly.
-* Apple's retina displays have twice the number on each dimension which means images will appear smaller. To "fix" this, they scaled up everything by 2x. This means that your images are scaled by a factor of 2 in each dimension. One possible fix you could apply against this scaling is to provide you image with the dimensions halved so the scaling cancels out.
-* Instead of mucking around with pixels or any such thing you could set dimensions in terms of "viewport units" which will then scale as your users' viewport changes.
 
 ## CSS Flexbox
 * You can turn an element into a flex container by adding the `display: flex` property to its style. Whether they are aligned in a row or column and in which direction is defined by `flex-direction` which can be `(row|column)[-reverse]`. The default value is "row". 
@@ -129,4 +89,3 @@ We're building a HTML5 cat photo web app.
 * There's also a **short-hand** `grid-area` which can be set to `grid-row-start / grid-column-start / grid-row-end / grid-column-end` where any of the values can be positive, negative, or a span + value.
 * Sometimes, when some cells have different sizes than others, there might be empty spaces in the grid which can't be filled if the HTML flow is followed. Since CSS Grid has source order independence you can ask it to fill it optimally to avoid spaces using a "dense packing algorithm" with this property: `grid-auto-flow` which, by default, is set to `row` but you can change it to `dense`.
 
-That's it from the lessons. Time to make use of all of it through projects!

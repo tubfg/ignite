@@ -1,2 +1,2 @@
-# What made all of this possible
-* [Drawing-compass icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/drawing-compass)
+# External stuff used to make this site
+* [favicon from icon-icons.com](https://icon-icons.com/icon/craft-star-origami-paper-creative/226495)

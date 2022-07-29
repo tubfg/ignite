@@ -1,9 +1,7 @@
 # Web3
 We might move towards a decentralized internet.
-Learn how to develop useful things for it. The internet kinda sucks the way it's being censored now. 
-I like freedom and wish everyone is given the opportunity to do what they want 
-(as long as it doesn't hurt anyone). I believe this can be a good starting point for that. 
-PRIVACY & CHOICE FTW!
+Learn how to develop useful things for it.
+It would be really interesting to see how people would use software which they control.
 
 ## Learn
 Start off with this [cool video I found on YouTube](https://youtu.be/l44z35vabvA)

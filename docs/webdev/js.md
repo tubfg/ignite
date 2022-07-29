@@ -1,8 +1,7 @@
-# JavaScript Algorithms and Data Structures
-This is a bit of a surprise. It's a deviation from the original plan of learning front-end web development with React. Why deviate? JavaScript is used there and I'm no expert in it. It will be good to get back to CSS after a small break so that I can remember it better. My aim is to be comfortable writing JS programs, as comfortable as I am with Python. JS is used everywhere on the web and it feels so powerful. Time to use it well! It seems that this certification doesn't cover async JS. That's alright but I need to find resources for it by the time I finish this.  
-Notes guideline : Something fundamental and important or new (preferrably with links to explore). It should be short and complete.
+# JavaScript
+Notes from the freeCodeCamp "JavaScript Algorithms and Data Structures" course and more
 
-## Basic JavaScript
+## Basics
 * Variable names in JS can contain $, \_, letters, and numbers but cannot start with a number. Declaring a variable without initalizing it will make it an `undefined` type object and it will have the value `undefined`.
 * People like writing JS variable names in camelCase.
 * Variables declared with `var` can be declared multiple times. Trying to re-declare a variable declared with `let` results in a SyntaxError. `const` is like `let` but the variable is read-only.
