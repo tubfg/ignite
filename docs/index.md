@@ -5,6 +5,9 @@ Mainly, it's a way to learn useful skills and make notes for reference.
 The notes shouldn't be just copy-paste from courses.
 They should contain small pieces of knowledge that was hard to find / has great impact.
 
+[FREEZE!] I think I've added too much content here.
+Must finish them before adding any more (probably shouldn't add any more till 2023 or so)
+
 ## How's this
 Through these
 
