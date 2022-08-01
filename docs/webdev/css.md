@@ -21,11 +21,12 @@
 * Media queries are a way to apply certain CSS styles only when particular conditions from the browser are met, their general format is:
 
   ```css
-  @media media-type and (media-feature-rule) {
+  @media media-type (media-feature-rule) {
     /* CSS rules go here */
   }
   ```
   The `media-type and` part is optional. You can also redeclare styles which will then override the previous styles.
+* To apply multiple feature rules, you can do it like so: `@media (min-width: 1px) and (max-width: 2px) and (orientation: potrait) {}`
 
 * The `box-shadow` property in CSS can apply multiple shadows to elements. It can control, offsets, blur, spread and color of the shadows.
 * The `text-transform` can change the capitalization of elements without modifying the HTML. It can be set to `lowercase`, `capitalize`, etc.

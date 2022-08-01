@@ -2,15 +2,27 @@
 Notes from the freeCodeCamp "JavaScript Algorithms and Data Structures" course and more
 
 ## Basics
-* Variable names in JS can contain $, \_, letters, and numbers but cannot start with a number. Declaring a variable without initalizing it will make it an `undefined` type object and it will have the value `undefined`.
+* Variable names in JS can contain $, \_, letters, and numbers but cannot start with a number.
+Declaring a variable without initalizing it will make it an `undefined` type object and it will have the value `undefined`.
 * People like writing JS variable names in camelCase.
-* Variables declared with `var` can be declared multiple times. Trying to re-declare a variable declared with `let` results in a SyntaxError. `const` is like `let` but the variable is read-only.
-* JS has the `++` and `--` increment and decrement operators. The `%` in JS is not a modulo operator, it's a remainder operator and can return negative remainders.
+* Variables declared with `var` can be declared multiple times.
+Trying to re-declare a variable declared with `let` results in a SyntaxError. `const` is like `let` but the variable is read-only.
+* JS has the `++` and `--` increment and decrement operators.
+The `%` in JS is not a modulo operator, it's a remainder operator and can return negative remainders.
 * Values of type `String` are immutable. Like Python.
-* Constant variables cannot have their value changed, they cannot be re-declared or re-assigned a different value. In this case : `const a = [1, 2, 3]`, the variable `a` holds the reference to the array (since it is not a primitive type). Therefore the array itself can be modified (e.g. `a.push(1)` or `a[2] = 7`) since the reference won't change and the "const-ness" still holds.
+* Constant variables cannot have their value changed, they cannot be re-declared or re-assigned a different value. 
+In this case : `const a = [1, 2, 3]`, the variable `a` holds the reference to the array (since it is not a primitive type). 
+Therefore the array itself can be modified (e.g. `a.push(1)` or `a[2] = 7`) since the reference won't change and the "const-ness" still holds.
 * The `push` function of an `array` takes in one or more arguments and appends them to the end of the array.
-* `shift` and `unshift` remove and add values to the beginning to the start of the array just like `pop` and `push` do to the end of the array.
-* If a variable is declared without `let`, `const`, or `var` it will have global scope regardless of where it is declared. **Explanation**: [There aren't any "global variables" in JS](http://blog.niftysnippets.org/2008/03/horror-of-implicit-globals.html) (They are there when declared by `let` or `const`). When you do `wowNiceGlobal = 5` where `wowNiceGlobal` is being referenced for the first time thus making it a "global variable" and giving it global scope, it really just creates and assigns to a property (with the same name) of **the** global object. In a browser, the `window` variable is a reference to the global object. You can stop this property setting from happening by adding "use strict" to your code.
+* `shift` and `unshift` remove and add values to the beginning to the start of the array 
+just like `pop` and `push` do to the end of the array.
+* If a variable is declared without `let`, `const`, or `var` it will have global scope regardless of where it is declared. 
+**Explanation**: [There aren't any "global variables" in JS](http://blog.niftysnippets.org/2008/03/horror-of-implicit-globals.html)
+(They are there when declared by `let` or `const`).
+When you do `wowNiceGlobal = 5` where `wowNiceGlobal` is being referenced for the first time thus making it a "global variable"
+and giving it global scope, it really just creates and assigns to a property (with the same name) of **the** global object.
+In a browser, the `window` variable is a reference to the global object.
+You can stop this property setting from happening by adding "use strict" to your code.
 * **Scope**. A variable, declared with `var`, `let`, or `const` at the top level of your code is given global scope. `var` has a function scope. If a `var` variable is defined in some block in a function it will be available throughout the function. `let` is block scoped. It does not exist outside the block. Within their scopes both `let` and `var` variables are "hoisted". This means they are defined at the top of their scopes. `var` variables are initialized with `undefined` while `let` variables are not initialized and will cause a ReferenceError if you try to access them. `const` has the same scoping rules as `let`.
 * The `==` operator will perform type coercion if the operands aren't of the same type. The `===` operator doesn't convert types and will return false if the types are different. Like that there are also the `!=` and `!==` operators.
 * **Type Coercion**. Primitive types are `number`, `string`, `null`, `undefined`, `boolean` and `symbol`(new, added in ES6). Using [this article about type coercion for reference](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/) we see that you can explicitly convert and that the only implicit conversion allowed (for primitives and others) is "to string", "to number", and "to boolean".
@@ -77,7 +89,7 @@ When you try to access a property of an object, it is first checked in the objec
 * **FUNCTIONS ARE OBJECTS.** They are constructed by the function `Function` which has properties like `call`, `name`, `arguments`, and so on, which was constructed by the function `Object` which has properties like `toString`, `hasOwnProperty`, and so on.
 * Let `Car` be a function object that can be used as a constructor. Let `maserati` be an object created by that function. `Car.prototype` is the prototype object of all objects created by `Car`. `maserati.__proto__` points to `Car.prototype`. 
 * All functions, just like `Car`, have a `prototype` property. Other than anonymous functions. That is why anonymous functions are not constructors and cannot be used create objects.
-* Since Object is a function (i.e. an object that is callable) `Object.prototype` is `{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}`  
+* Since Object is a function (i.e. an object that is callable) `Object.prototype` is `{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}`  
 * Some objects and their prototypes:
 ```js
 var o = {a: 1};
@@ -146,3 +158,52 @@ Like `.call(newThis)`, there's also `.bind(newThis)` which returns a function wh
 `.bind(newThis, ...args)` can also be used to create partial functions. You can set some parameters of the function and those won't be required in the new function that `bind` returns.
 
 ## Random questions
+### Symbols?
+They're a special data type and the only one other than string which can be used as a key for an object (all other types are converted to string first).
+
+You can create one like so: `let zoomZoom = Symbol()`.  And use it as a key like so: `let obj = {[zoomZoom]: 'cool key', 123: 'not so cool key'}; console.log(obj[zoomZoom])`.
+
+A symbol cannot be converted to string automatically. To make that happen, use `zoomZoom.toString()`.
+
+Symbols can also optionally have a "description" that you can provide while creation like so: 
+```js 
+let sym1 = Symbol('the best one'); 
+let sym2 = Symbol('the best one'); 
+let sym3 = Symbol('some random one'); 
+console.log(sym1 == sym2); // prints false 
+```
+note that even if they have the same description, the symbols are different.
+
+The symbol keys of an object don't show up in `Object.keys` or in the `for in` loop.  To get all the symbol keys of an object, use
+`Object.getOwnPropertySymbols(obj)`.
+
+We've seen that every time we create a symbol, we get a new one, even if we use
+the same description.  What if we want JS to give us the same symbol in case the
+description we provided is the same? Do it like this: 
+```js
+let sym4 = Symbol.for('nice key');
+let sym5 = Symbol.for('nice key');
+let sym6 = Symbol.for('bad key');
+console.log(sym4 === sym5); // prints true
+console.log(sym5 === sym6); // prints false
+console.log(Symbol.keyFor(sym4); // prints 'nice key'
+console.log(Symbol.keyFor(sym1); // prints undefined since it was not created by Symbol.for, thus doesn't exist in the global registry
+```
+This method of creating symbols uses a global registry and checks it for
+existing descriptions before returning a new symbol.
+
+There are also some inbuilt symbols like this one: `Symbol.iterator`.
+
+### primitive properties? 
+How can primitive types be assigned properties and methods be called on them?  That's because when some property is assigned or a
+method is called, the primitive is wrapped in a temporary object.  That
+temporary object is discarded after the operation.  Examples:
+```js
+let a = "hi there"; 
+a.coolstuff = 123; 
+console.log(a.coolstuff); // undefined
+console.log("hiphop".includes("ip")); // true
+```
+
+### copying stuff
+To deep copy just do `structuredClone(objToCopy)`. It has good support [as per caniuse](https://caniuse.com/mdn-api_structuredclone).
