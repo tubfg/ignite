@@ -14,6 +14,7 @@ Any content that doesn't really fit in one of these links can be found in this p
 ## Extra learn
 * [Cool HTML elements](https://www.youtube.com/watch?v=VUxkFEYO4bE&list=PL4-IK0AVhVjOquwY5m3R3KFIEYW2sZEl5&index=3)
 in [two videos](https://www.youtube.com/watch?v=JuLBQXERz8Y).
+* How to make HTML powerful with [data attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 * [Asynchronous programming in JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts) 
 used by all modern applications.
 * [Client side web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs) 

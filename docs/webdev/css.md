@@ -27,6 +27,8 @@
   ```
   The `media-type and` part is optional. You can also redeclare styles which will then override the previous styles.
 * To apply multiple feature rules, you can do it like so: `@media (min-width: 1px) and (max-width: 2px) and (orientation: potrait) {}`
+* Having trouble deciding what screen sizes should be used? See where your layout breaks when you expand / shrink and use that.
+You could also just design for the common sizes like upto-600px, upto-900px, and so on.
 
 * The `box-shadow` property in CSS can apply multiple shadows to elements. It can control, offsets, blur, spread and color of the shadows.
 * The `text-transform` can change the capitalization of elements without modifying the HTML. It can be set to `lowercase`, `capitalize`, etc.

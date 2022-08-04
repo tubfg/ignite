@@ -35,11 +35,15 @@ You can stop this property setting from happening by adding "use strict" to your
 * To check if an object has a property, use this function: `objkt.hasOwnProperty(propname)` which returns a boolean value.
 * The `while` loop and the `for` loops are like C's. The `do{}while()` loop too.
 * The RNG for JS is `Math.random` which returns numbers in the range [0, 1).
+* When you have a variable of the Function type you can check how many args it takes
+using `varName.length` and find out the function name using `varName.name`.
 
 ## ES6 (Modern JavaScript)
 * You can prevent an object from being modified by passing it to `Object.freeze(objkt)` (Not by making a `const` object).
 * You can extend an array (a1) with another array (a2) by using `arr1.concat(arr2)`.
-* Variable argument functions are possible using the rest parameter. You specify a parameter as `...paraName` and when you pass multiple arguments they are all available in array with that name (paraName here).
+* Variable argument functions are possible using the rest parameter.
+You specify a parameter as `...paraName` and when you pass multiple arguments they are all available in array with that name (paraName here).
+This is the preffered method over using the `arguments` object that's available for all non-arrow functions.
 * Similarly, there is the "spread" operator to unpack an array into multiple elements, this can be useful when the function expects multiple parameters instead of an array. It follows the same syntax. Given an array arr, you can do `console.log(...arr)`.
 * The object destructuring operator is a clean shortcut to extract multiple values from an object at once. The most basic way to do it is : `{param1, param2} = objkt`. Suppose you want to use variables of different names you can do this : `{"param1": var1, "param2": var2} = objkt`. Nested objects call for nested destructuring. You can destructure in the function arguments.
 * Similarly, there is also array destructuring. You can unpack particular values from the array. Like so, `[a, b,,,, c, d,, e] = [1,2,3,4,5,6,7,8,9,0]`. For the last elements, you can also unpack them into a separate array using the rest operator. So if you want a new array but without the first 4 values you would do : `[,,,, ...new_arr] = arr`.
@@ -53,10 +57,22 @@ You can stop this property setting from happening by adding "use strict" to your
 * The **new operator** can be used to create objects from **functions** or **classes**. To use it with a function the function must act like a constructor and set properties to `this`. To use it with a class, the class must have a constructor.
 * **Promise** is a feature to execute code asynchronously. You can create a `Promise` object with the `Promise` function. It expects you to take in two arguments (both of which are callbacks). As a convention we create a new promise object like this : `let prms = new Promise((resolve, reject) => {});`.
 * A promise can be in one of three states: `pending`, `fulfilled`, and `failed`. It is `pending` when the promise is created, `fulfilled` when the `resolve` function is called, and `failed` when the `reject` function is called. Both `resolve` and `reject` take one argument each.
-* You can also set additional functions for a promise. You can set the `then` property to a function (executed when the promise enters the "fulfilled" state) which takes in the argument passed to `resolve` (executed when the promise enters the "failed" state) and you can set the `catch` property to a function which takes in the argument passed to `reject`.
+* You can set hanlders for a promise by calling `.then(resolveFunc, rejectFunc)` or `.catch(rejectFunc)`. 
+You can pass a function `resolveFunc` (executed when the promise enters the "fulfilled" state)
+which takes one argument, i.e. the value passed to `resolve`.
+You could also pass the `rejectFunc` (executed when the promise enters the "failed" state)
+that takes in one argument i.e., the value passed to `reject`.
+* To collect multiple promises into one there's the `Promise.All` function which takes in an iterable and returns a promise which
+resolves with an iterable of all resolved values of input promises or rejects when any of the input promises reject.
+* It's possible to have multiple handlers for a promise. e.g., `prms.then(() => {alert(1);}); prms.then(() => {alert(2);});`
+* It's also possible to chain handlers because `.then()` returns an object which the `.catch` and `.then` functions.
+Therefore you could do
+`prms.then(rsVal => new Promise((rs, rj) => rs(1)).then(rsVal => new Promise((rs, rj) => rs(3))).catch(rjVal => console.log(rjVal))`
 
 ## Regular Expressions
-* You can specify a required number of matches, more specific than `*` or `+`. The format is `(some matching pattern){min, max}`. You can omit min or max if you don't want a lowerbound or upperbound, respectively. To specify a particular number of matches, use `(pattern){exactNum}`.
+* You can specify a required number of matches, more specific than `*` or `+`. The format is `(some matching pattern){min, max}`.
+You can omit min or max if you don't want a lowerbound or upperbound, respectively.
+To specify a particular number of matches, use `(pattern){exactNum}`.
 ## Debugging
 console.clear() is useful
 
@@ -207,3 +223,143 @@ console.log("hiphop".includes("ip")); // true
 
 ### copying stuff
 To deep copy just do `structuredClone(objToCopy)`. It has good support [as per caniuse](https://caniuse.com/mdn-api_structuredclone).
+
+### nullish coalescing
+`a || b` will evalaute to `b` in case `a` is any falsy value.
+Then there is nullish coalescing which tests for nullish values i.e.,
+`a ?? b` will evaluate to `b` only when when `a` is `null` or `undefined`.
+
+There is also [logical nullish assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment)
+`??=` which assigns a value only if the variable is nullish.
+
+### event bubbling, capturing, and delegation
+Events on an element are first captured by document, then `<html>` then `<body>` and so on
+until it reaches the element itself. Then the event is "processed" at the target.
+Then the event bubbles up to the parent element and it's parent and so on until document.
+If there are any handlers in the path, they are run.
+
+An element could also have multiple handlers for the same event.
+In case of multiple handlers on an element for an event, the order they run is browser specific.
+
+To register an event handler you need to specify:
+* The event type (e.g. 'click')
+* The event handler (a function which will receive an event object)
+* An optional boolean to tell whether the handler should run in the capturing phase or not
+To remove an event handler you need to specify the same handler function and phase.
+
+Not all events bubble (e.g. 'hover').
+The event object has `event.target` and `event.currentTarget`
+(the element where the handler is running).
+
+You can stop propagation of an event (upwards / downwards) using `event.stopPropagation()`.
+To also stop all other handlers of that event on this element running, use
+`event.stopImmediatePropagation()`. To prevent the default behaviour, use `event.preventDefault()`.
+
+Sometimes you may want the same behaviour out of many elements 
+(e.g., `<li>`s in a `<ul>` or `<td>`s in a `<table>`)
+there's no need to set event handler to each element, you can set it on a common ancestor.
+That's called **event delegation**. You can do it like so:
+```js
+table.addEventListener('click', (event) => {
+  let td = event.target.closest('td'); // did the event occur on a td or its children?
+
+  if (!td) return; // if not, exit
+
+  if (!table.contains(td)) return; // make sure the td belongs to this table not some other
+
+  td.classList.add('highlight');
+});
+```
+
+### closure
+Good resource:
+https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/ch7.md
+
+A reference of a variable from an outer scope inside a function is called a closure.
+The function _closes_ over the outer variables.
+The outer variables don't get garbage collected even when their scopes get over
+(as long as the functions exist).
+
+Closures are associated with instances of functions and not their definitions.
+Note that the closure is a reference to the outer variable and not a snapshot of it's value
+when the function was created (which was a common misconception).
+
+Also note that a closure only requires an "inner" function.
+The outer scope need not be a function, it could be a block too. e.g.,
+```js
+var hits;
+{   // an outer scope (but not a function)
+    let count = 0;
+    hits = function getCurrent(){
+        count = count + 1;
+        return count;
+    };
+}
+hits();     // 1
+hits();     // 2
+hits();     // 3
+```
+
+That is important in understanding the difference between
+```js
+var fns = [];
+
+for (let i = 0; i < 3; i++) {
+    fns[i] = () => i;
+}
+
+console.log(fns[0](), fns[1](), fns[2]());
+// 0 1 2
+```
+and
+```js
+var fns = [];
+
+for (var i = 0; i < 3; i++) {
+    fns[i] = () => i;
+}
+
+console.log(fns[0](), fns[1](), fns[2]());
+// 3 3 3
+```
+
+In the second case, since `i`'s scope is global and it won't be GC'd before the functions are used,
+each function need not have a separate live copy (which is what happens in the first case).
+
+That also explains the behaviour in these examples:
+```js
+var fns = [];
+
+for (let i = 0; i < 3; i++) {
+    fns[i] = () => (i += 2);
+}
+
+console.log(fns[0](), fns[1](), fns[2]());
+// 2 3 4
+// i.e., there are three different instances of the closed variable
+```
+
+whereas in the case of `var` it becomes
+```
+var fns = [];
+
+for (var i = 0; i < 3; i++) {
+    fns[i] = () => (i += 2);
+}
+
+console.log(fns[0](), fns[1](), fns[2]());
+// 5 7 9
+// i.e., they're all updating the same global i
+```
+in fact the examples with `var` aren't even closure really since the global variables
+are always available.
+
+Note: because closures delay GC they could lead to excess memory usage.
+
+Technically a function instance only closes over the variable it uses from the outer scope
+and all other variables in the outer scope can be GCd when the scope gets over.
+However that's not what really happens. Since the interpreter cannot always know what variables
+from the outer scope are being accessed (looking at you, `eval`), it might end up keeping the entire
+outer scope if it thinks there is a possibility of a closure.
+Thus, when using closures, try to clear up the variables in the outer scope by setting them to `null`.
+Also, one more reason to avoid using `eval`.
