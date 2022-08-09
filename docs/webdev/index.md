@@ -40,3 +40,7 @@ More CSS stuff (since the language keeps improving):
 
 Is something missing? [DO THIS LAST!!!]
 * Complete all of boxes for the [web dev skills mentioned here](https://andreasbm.github.io/web-skills/?compact).
+
+## Make use of it all
+https://www.frontendmentor.io/challenges
+
